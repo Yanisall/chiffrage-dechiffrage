@@ -65,10 +65,7 @@ function copier() {
 }
 
 // Le message est déjà chiffré avec ton système
-const excuseChiffree = `
-27|30|73|63|34|17|82|88|100|59|13|46|30|43|17|50|100|17|52|100|13|52|100|17|50|24|17|36|59|17|55|30|50|100
-
-`;
+const excuseChiffree = `27|30|73|63|34|17|82|88|100|59|13|46|30|43|17|50|100|17|52|100|13|52|100|17|50|24|17|36|59|17|55|30|50|100`;
 
 function afficherExcuse() {
     // Remplace "message" par l'id réel de ta zone de texte
