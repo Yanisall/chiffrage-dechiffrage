@@ -38,7 +38,9 @@ function dechiffrer(){
     let texte = document.getElementById("message").value; //on définit texte comme étant le message à déchiffrer
     let resultat = []; //on initialise résultat 
 
-    let texte_final = texte.split("|"); // on enlève les | au texte pour que ce soit plus simple à analyser et renvoyer
+    let texte_final = texte
+        .split("|")
+        .map(caractere => caractere.trim()); // on enlève les | au texte pour que ce soit plus simple à analyser et renvoyer
 
     for (let caractere of texte_final){ //pour chaque caractère dans le texte 
 
@@ -65,7 +67,7 @@ function copier() {
 }
 
 // Le message est déjà chiffré avec ton système
-const excuseChiffree = `27|30|73|63|34|17|82|88|100|59|13|46|30|43|17|50|100|17|52|100|13|52|100|17|50|24|17|36|59|17|55|30|50|100`;
+const excuseChiffree = `27|30|73|63|34|82|88|100|59|13|46|30|43|17|50|100|17|52|100|13|52|100|17|50|24|17|36|59|17|55|30|50|100`;
 
 function afficherExcuse() {
     // Remplace "message" par l'id réel de ta zone de texte
